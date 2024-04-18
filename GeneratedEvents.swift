@@ -38,4 +38,15 @@ struct ReachedCheckoutEvent {
     }
 }
 
+/// User purchased tickets, yay!
+struct PurchasedTicketsEvent {
+    let name = "PurchasedTickets"
+    
+    let totalAmount: String
+
+    var data: [String: String] {
+        "totalAmount": totalAmount,
+    }
+}
+
 
